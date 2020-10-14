@@ -1,5 +1,8 @@
 let myLibrary = [];
+
+if (JSON.parse(localStorage.getItem('myLibrary')) !== null) {
 myLibrary = JSON.parse(localStorage.getItem('myLibrary'));
+};
 
 if (myLibrary.length === 0) {
     addBookToLibrary('The Fellowship Of The Ring', 'J.R.R. Tolkien', 480, 'already');
