@@ -27,13 +27,6 @@ function displayLibrary() {
         let card = document.createElement('p');
         str = '"' + myLibrary[i].title + '" by ' + myLibrary[i].author + ', ' + myLibrary[i].pages + ' pages, ' + myLibrary[i].read + ' read.';
         function convertObj(object) {
-            
-            // for (let k in object) {
-            //     if (object.hasOwnProperty(k)) {
-            //         str += k + ': ' + object[k] + ' | ';
-            //         str = object[k] + ', by ' object[k] + ', ' + object[k] + ' pages, ' + object[k] + ' read.';
-            //     }
-            // }
             return str;
         };
         let cardText = document.createTextNode(convertObj(myLibrary[i]));
